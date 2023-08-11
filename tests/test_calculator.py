@@ -1,7 +1,7 @@
 # test_calculator.py
 
 import unittest
-from calculator import add, subtract
+from modules.calculator import add, subtract
 
 class TestCalculator(unittest.TestCase):
 
