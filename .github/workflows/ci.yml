@@ -23,7 +23,7 @@ jobs:
 
       - name: Add Python to PATH
         run: |
-          echo "##[add-path]${{ env.PYTHONPATH }}"
+        echo "PYTHONPATH=${{ env.PYTHONPATH }}" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: |
