@@ -21,6 +21,10 @@ jobs:
         env:
           AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
 
+      - name: Add Python to PATH
+        run: |
+          echo "##[add-path]${{ env.PYTHONPATH }}"
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
